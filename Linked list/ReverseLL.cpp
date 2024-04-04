@@ -36,3 +36,16 @@ public:
         
     }
 };
+
+//recursive approach
+Node* reverseLinkedList(Node *head)
+{
+    if (head==nullptr||head->next==nullptr)
+    return head;
+    Node * newHead=reverseLinkedList(head->next);
+    Node *front=head->next;
+    front->next=head;
+    head->next=nullptr;
+    return newHead;
+   
+}
