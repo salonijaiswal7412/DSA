@@ -7,8 +7,7 @@ public:
 
     string helper(string& s) {
         string result;
-
-        while (i < s.length()) {
+        while(i < s.length()) {
             if (s[i] == ')') {
                 i++;
                 reverse(result.begin(), result.end());
