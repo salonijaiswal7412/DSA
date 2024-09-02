@@ -1,3 +1,4 @@
+//print the elements in the given no of row in the pascal triangle
 //Brute force approach
 //time complexity=O(n*r)
 class Solution {
