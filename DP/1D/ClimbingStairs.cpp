@@ -11,6 +11,7 @@ public:
         
     }
 };
+<<<<<<< HEAD
 //space efficient
 class Solution {
 public:
@@ -26,3 +27,6 @@ public:
         
     }
 };
+=======
+//space optimization
+>>>>>>> a06d9a2388e67d6b41a334b0b5eb7ae02bd898c8
