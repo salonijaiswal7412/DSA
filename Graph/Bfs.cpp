@@ -1,4 +1,4 @@
- vector<int> bfsOfGraph(int V, vector<int> adj[]) {
+vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         // Code here
         vector<int> vis(V,0);
         vis[0]=1;
