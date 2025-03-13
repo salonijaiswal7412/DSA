@@ -11,7 +11,7 @@ public:
         
     }
 };
-<<<<<<< HEAD
+
 //space efficient
 class Solution {
 public:
