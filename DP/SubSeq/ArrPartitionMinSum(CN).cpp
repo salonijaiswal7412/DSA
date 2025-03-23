@@ -1,12 +1,10 @@
-//tabulation solution using the concept of subset sum ques
-//partially accepted in cn 49/50
 int minSubsetSumDifference(vector<int>& arr, int n)
 {
 	// Write your code here.
 	int s=0;
-	for(auto i:arr) s+=i;
+	for(auto i: arr) s+=i;
 	int k=s;
-	vector<vector<bool>>dp(n,vector<bool>(k+1,0));
+	vector<vector<bool>> dp(n,vector<bool> (k+1,false));
 	for(int i=0;i<n;i++){
 		dp[i][0]=true;
 	}
@@ -15,18 +13,18 @@ int minSubsetSumDifference(vector<int>& arr, int n)
 		for(int j=1;j<=k;j++){
 			bool nottake=dp[i-1][j];
 			bool take=false;
-			if(arr[i]<=j)
-			take=dp[i-1][j-arr[i]];
-
+			if(arr[i]<=j){
+				take=dp[i-1][j-arr[i]];
+			}
 			dp[i][j]=take|nottake;
 		}
 	}
 	int ans=1e9;
-	for(int i=0;i<=k/2;i++){
+	for(int i=0;i<=k;i++){
 		if(dp[n-1][i]==true){
-			ans=min(ans,abs((s-i)-i));
-
+			ans=min(ans,abs((k-i)-i));
 		}
 	}
 	return ans;
+
 }
