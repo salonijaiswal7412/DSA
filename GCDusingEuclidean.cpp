@@ -4,5 +4,5 @@ int calcGCD(int n, int m){
     return n;
     else 
     return calcGCD(m,n%m);
-
+ 
 }
