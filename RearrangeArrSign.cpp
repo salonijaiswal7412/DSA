@@ -12,11 +12,11 @@ public:
                 neg+=2;
             }
             else if(nums[i]>0){
-                v[pos]=nums[i];
+                v[pos]=nums[i]; 
                 pos+=2;
             }
         }
         return v;
         
-    }
+    
 };
