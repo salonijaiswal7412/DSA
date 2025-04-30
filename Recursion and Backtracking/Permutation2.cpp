@@ -4,7 +4,7 @@ public:
         if(temp.size()==nums.size()){
             ans.push_back(temp);
         }
-        for(int i=0;i<nums.size();i++){
+        for(int i=0;i<nums.size();i++){  
             if(freq[i]) continue;
             if(i>0 && nums[i]==nums[i-1] && !freq[i-1]) continue;
             freq[i]=1;
