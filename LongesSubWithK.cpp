@@ -30,5 +30,5 @@ int getLongestSubarray(vector<int>& a, int k){
         }
     }
 
-    return maxLen;
+    return maxLen; 
 }
