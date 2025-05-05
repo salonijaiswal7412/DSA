@@ -4,7 +4,7 @@ using namespace std;
 class DSU{
     vector<int> parent,size;
     public:
-    DSU(int n){
+    DSU(int n){ 
         parent.resize(n);
         for(int i=0;i<n;i++) parent[i]=i;
         size.resize(n,1);
