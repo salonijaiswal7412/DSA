@@ -9,7 +9,7 @@ bool possible(vector<int> &arr, int day, int m, int k) {
             cnt++;
         }
         else {
-            noOfB += (cnt / k);
+            noOfB += (cnt / k); 
             cnt = 0;
         }
     }
