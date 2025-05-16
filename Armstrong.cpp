@@ -14,4 +14,4 @@ bool checkArmstrong(int n){
 		x/=10;
 	}
 	return (s==n);
-}
+} 
