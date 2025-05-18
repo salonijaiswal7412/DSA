@@ -1,6 +1,6 @@
 vector<int> superiorElements(vector<int>&a) {
     // Write your code here.
-    int m=INT_MIN;
+    int m=INT_MIN; 
     vector<int> ans;
     
     for(int i=a.size()-1;i>=0;i--){
