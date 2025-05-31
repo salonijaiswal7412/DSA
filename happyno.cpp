@@ -7,7 +7,7 @@ public:
             while(n!=0){
                 int a = n%10;
                 n/=10;
-                x += (a*a);
+                x += (a*a); 
             }
             n=x;
         }
