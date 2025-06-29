@@ -8,7 +8,7 @@ int ladderLength(string beginWord, string endWord, vector<string> wordList) {
     s.erase(beginWord);
     while(!q.empty()){
         string word=q.front().first;
-        int steps=q.front().second;
+        int steps=q.front().second; 
         q.pop();
         if(word==endWord) return steps;
         for(int i=0;i<word.length();i++){
