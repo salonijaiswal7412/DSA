@@ -1,3 +1,4 @@
+//kruskal
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> parent;
@@ -46,3 +47,33 @@ int minCostConnectPoints(vector<vector<int>> points) {
     }
     return ans;
 }
+
+//prims
+class Solution {
+public:
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>> q;
+        int n=points.size(),ans=0,c=0;
+        vector<bool> vis(n,0);
+
+        q.push({0,0});
+
+        while(!q.empty() && c<n){
+            auto [w,to]=q.top();
+            q.pop();
+            if(vis[to]) continue;
+
+            ans+=w;
+            vis[to]=1;
+            c++;
+
+            for(int i=0;i<n;i++){
+                if(!vis[i]){
+                    int nw=abs(points[i][0]-points[to][0])+abs(points[i][1]-points[to][1]);
+                    q.push({nw,i});
+                }
+            }
+        }
+        return ans;
+    }
+};
