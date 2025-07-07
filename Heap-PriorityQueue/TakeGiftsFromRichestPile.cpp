@@ -5,6 +5,7 @@ public:
         while(k--){
             auto x=pq.top();
             pq.pop();
+            
             pq.push((sqrt(x)));
         }
         long long ans=0;
