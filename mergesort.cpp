@@ -19,7 +19,7 @@ void merge(int arr[], int l, int m, int h) {
         } else {
             arr[k] = R[j];
             j++;
-        }
+        } 
         k++;
     }
 
