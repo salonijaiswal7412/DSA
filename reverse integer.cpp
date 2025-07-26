@@ -3,7 +3,7 @@ public:
     int reverse(int x) {
          long ans = 0;
                  while(x){
-                             int digit = x%10;
+                             int digit = x%10; 
                                          ans = ans*10 + digit;
                                                      x = x/10;
                                                              }
