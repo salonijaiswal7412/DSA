@@ -1,4 +1,4 @@
-class Solution {
+ class Solution {
 public:
     bool isUgly(int n) {
         if(n==1) return true;
