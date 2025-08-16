@@ -15,7 +15,7 @@ class Segment{
         build(2*i+2,m+1,h,nums);
 
         seg[i]=seg[2*i+1]+seg[2*i+2];
-    }
+    } 
 
     void update(int i,int l,int h,int pos,int val){
         if(l==h){
