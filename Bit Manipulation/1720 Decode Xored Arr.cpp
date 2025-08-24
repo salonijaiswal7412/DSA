@@ -6,7 +6,7 @@ public:
         for(int i=1;i<ans.size();i++){
             ans[i]=ans[i-1]^encoded[i-1];
         }
-        return ans;
+        return ans; 
         
     }
 };
