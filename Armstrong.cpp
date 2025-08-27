@@ -11,7 +11,7 @@ bool checkArmstrong(int n){
 	while(x!=0)
 	{
 		s=s+pow((x%10),c);
-		x/=10;
+		x/=10; 
 	}
 	return (s==n);
 } 
