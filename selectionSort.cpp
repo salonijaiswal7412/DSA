@@ -9,6 +9,6 @@ void selectionSort(vector<int>&arr) {
             min=j;
             
         }
-        swap(arr[min],arr[i]);
+        swap(arr[min],arr[i]); 
     }
 }
