@@ -15,7 +15,7 @@ public:
 
         
     }
-    
+     
     void insert(string word) {
         Node* temp=root;
         for(int i=0;i<word.size();i++){
